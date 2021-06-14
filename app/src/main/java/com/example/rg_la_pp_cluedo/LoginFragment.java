@@ -78,7 +78,7 @@ public class LoginFragment extends Fragment {
             userDataRef = database.getDatabase().getReference("Users/"+shSettings.getString("userName","@")+"/User");
             addEventListener();
             userDataRef.get();
-            UserName.setText(R.string.txt_recuperando);
+            UserName.setText(R.string.nameUser);
         } else {
             ViewSingIn();
         }
@@ -203,11 +203,11 @@ public class LoginFragment extends Fragment {
                         } else {
                             // Error en la autentificación ya sea por que no está registrado o por poner mal algún dato
                             if (task.getException().getClass() == com.google.firebase.auth.FirebaseAuthInvalidCredentialsException.class) {
-                                Toast.makeText(getContext(), tag + R.string.err_email, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), tag + getString(R.string.err_email), Toast.LENGTH_SHORT).show();
                             } if (task.getException().getClass() == com.google.firebase.auth.FirebaseAuthInvalidUserException.class) {
-                                Toast.makeText(getContext(), tag + R.string.err_noExisteEmail, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), tag + getString(R.string.err_noExisteEmail), Toast.LENGTH_SHORT).show();
                             } if (task.getException().getClass() == com.google.firebase.auth.FirebaseAuthInvalidCredentialsException.class){
-                                Toast.makeText(getContext(), tag +  R.string.err_contraseña, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), tag +  getString(R.string.err_contraseña), Toast.LENGTH_SHORT).show();
                             } else {
                                 Toast.makeText(getContext(), tag, Toast.LENGTH_SHORT).show();
                             }
@@ -263,11 +263,11 @@ public class LoginFragment extends Fragment {
                                     } else {
 
                                         if (task.getException().getClass() == com.google.firebase.auth.FirebaseAuthInvalidCredentialsException.class) {
-                                            Toast.makeText(getContext(), tag + R.string.err_email, Toast.LENGTH_LONG).show();
+                                            Toast.makeText(getContext(), tag + getString(R.string.err_email), Toast.LENGTH_LONG).show();
                                         } else if (task.getException().getClass() == com.google.firebase.auth.FirebaseAuthWeakPasswordException.class) {
-                                            Toast.makeText(getContext(), tag +R.string.err_contraseña, Toast.LENGTH_LONG).show();
+                                            Toast.makeText(getContext(), tag +getString(R.string.err_contraseña), Toast.LENGTH_LONG).show();
                                         } else if (task.getException().getClass() == com.google.firebase.auth.FirebaseAuthUserCollisionException.class) {
-                                            Toast.makeText(getContext(), tag + R.string.err_email_si, Toast.LENGTH_LONG).show();
+                                            Toast.makeText(getContext(), tag + getString(R.string.err_email_si), Toast.LENGTH_LONG).show();
                                         } else {
                                             Toast.makeText(getContext(), tag, Toast.LENGTH_LONG).show();
                                         }
@@ -276,7 +276,7 @@ public class LoginFragment extends Fragment {
                                     }
                                 });
                             else
-                                Toast.makeText(getContext(), tag + R.string.txt_validado, Toast.LENGTH_LONG).show();
+                                //Toast.makeText(getContext(), tag + R.string.txt_validado, Toast.LENGTH_LONG).show();
 
 
                             btSignIn.setText(R.string.txt_sign_in);

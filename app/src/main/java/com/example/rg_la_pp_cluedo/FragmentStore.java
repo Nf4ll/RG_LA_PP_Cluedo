@@ -1,5 +1,6 @@
 package com.example.rg_la_pp_cluedo;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
@@ -156,6 +157,7 @@ public class FragmentStore extends Fragment {
                     user.setAvatar(R.drawable.avatar1);
                     user.setPoints(p-100);
                     userRef.setValue(user);
+                    tvPoints.setText(getString(R.string.txt_puntos)+String.valueOf(user.getPoints()));
                 } else {
                     Toast.makeText(getContext(), getString(R.string.no_points),  Toast.LENGTH_SHORT).show();
                 }
@@ -166,6 +168,7 @@ public class FragmentStore extends Fragment {
                     user.setAvatar(R.drawable.avatar10);
                     user.setPoints(p2-200);
                     userRef.setValue(user);
+                    tvPoints.setText(getString(R.string.txt_puntos)+String.valueOf(user.getPoints()));
                 } else {
                     Toast.makeText(getContext(), getString(R.string.no_points),  Toast.LENGTH_SHORT).show();
                 }
@@ -176,6 +179,7 @@ public class FragmentStore extends Fragment {
                     user.setAvatar(R.drawable.avatar2);
                     user.setPoints(p3-100);
                     userRef.setValue(user);
+                    tvPoints.setText(getString(R.string.txt_puntos)+String.valueOf(user.getPoints()));
                 } else {
                     Toast.makeText(getContext(), getString(R.string.no_points),  Toast.LENGTH_SHORT).show();
                 }
@@ -186,6 +190,7 @@ public class FragmentStore extends Fragment {
                     user.setAvatar(R.drawable.avatar3);
                     user.setPoints(p4-100);
                     userRef.setValue(user);
+                    tvPoints.setText(getString(R.string.txt_puntos)+String.valueOf(user.getPoints()));
                 } else {
                     Toast.makeText(getContext(), getString(R.string.no_points),  Toast.LENGTH_SHORT).show();
                 }
@@ -196,6 +201,7 @@ public class FragmentStore extends Fragment {
                     user.setAvatar(R.drawable.avatar6);
                     user.setPoints(p5-200);
                     userRef.setValue(user);
+                    tvPoints.setText(getString(R.string.txt_puntos)+String.valueOf(user.getPoints()));
                 } else {
                     Toast.makeText(getContext(), getString(R.string.no_points),  Toast.LENGTH_SHORT).show();
                 }
@@ -206,6 +212,7 @@ public class FragmentStore extends Fragment {
                     user.setAvatar(R.drawable.avatar9);
                     user.setPoints(p6-300);
                     userRef.setValue(user);
+                    tvPoints.setText(getString(R.string.txt_puntos)+String.valueOf(user.getPoints()));
                 } else {
                     Toast.makeText(getContext(), getString(R.string.no_points),  Toast.LENGTH_SHORT).show();
                 }

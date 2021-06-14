@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/nameUser"
-            android:textSize="24sp"
+            android:textSize="@dimen/R_subtitulo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,8 +42,9 @@
 
         <FrameLayout
             android:id="@+id/frameLayout"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/E_margentxt"
             android:foregroundGravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -93,7 +94,8 @@
                     android:id="@+id/btLogOut"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/log_out" />
+                    android:text="@string/log_out"
+                    android:textSize="@dimen/H_parrafo" />
             </LinearLayout>
 
             <LinearLayout
@@ -116,7 +118,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/txt_login"
-                        android:textSize="30sp"
+                        android:textSize="@dimen/H_titulo"
                         app:layout_constraintBottom_toTopOf="@+id/etUserName"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
@@ -130,6 +132,7 @@
                         android:ems="10"
                         android:hint="@string/nameUser"
                         android:inputType="textPersonName"
+                        android:textSize="@dimen/E_texto"
                         app:layout_constraintBottom_toTopOf="@+id/etPassword"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
@@ -143,6 +146,7 @@
                         android:ems="10"
                         android:hint="Password"
                         android:inputType="textPassword"
+                        android:textSize="@dimen/E_texto"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
@@ -153,6 +157,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/txt_sign_in"
+                        android:textSize="@dimen/H_parrafo"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/btLogIn" />
@@ -162,6 +167,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/txt_login"
+                        android:textSize="@dimen/H_parrafo"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
@@ -172,6 +178,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/ya_est_s_registrado"
+                        android:textSize="@dimen/H_parrafo"
                         app:layout_constraintBottom_toBottomOf="@+id/btSignIn"
                         app:layout_constraintEnd_toStartOf="@+id/btSignIn"
                         app:layout_constraintTop_toTopOf="@+id/btSignIn" />

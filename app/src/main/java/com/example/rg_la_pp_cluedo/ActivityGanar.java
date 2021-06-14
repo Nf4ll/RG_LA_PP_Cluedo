@@ -103,4 +103,11 @@ public class ActivityGanar extends AppCompatActivity {
         Intent menu = new Intent(this, ActivityMain.class);
         startActivity(menu);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mp.release();
+        mp = null;
+    }
 }
