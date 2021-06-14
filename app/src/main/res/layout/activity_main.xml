@@ -37,8 +37,8 @@
 
             <ImageButton
                 android:id="@+id/btAccount"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/E_cartaAlto"
+                android:layout_height="@dimen/E_cartaAlto"
                 android:layout_weight="1"
                 android:background="@color/backText"
                 android:onClick="changeFragment"
@@ -55,7 +55,8 @@
                 android:gravity="center"
                 android:text="@string/user"
                 android:textAllCaps="false"
-                android:textIsSelectable="false" />
+                android:textIsSelectable="false"
+                android:textSize="@dimen/H_parrafo" />
         </LinearLayout>
 
         <LinearLayout
@@ -67,8 +68,8 @@
 
             <ImageButton
                 android:id="@+id/btHistorial"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/E_cartaAlto"
+                android:layout_height="@dimen/E_cartaAlto"
                 android:layout_weight="1"
                 android:background="@color/backText"
                 android:onClick="changeFragment"
@@ -81,7 +82,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/historial" />
+                android:text="@string/historial"
+                android:textSize="@dimen/H_parrafo" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,8 +95,8 @@
 
             <ImageButton
                 android:id="@+id/btPlay"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/E_cartaAlto"
+                android:layout_height="@dimen/E_cartaAlto"
                 android:layout_weight="1"
                 android:background="@color/backText"
                 android:onClick="changeFragment"
@@ -107,7 +109,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/juego" />
+                android:text="@string/juego"
+                android:textSize="@dimen/H_parrafo" />
         </LinearLayout>
 
         <LinearLayout
@@ -119,8 +122,8 @@
 
             <ImageButton
                 android:id="@+id/btStore"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/E_cartaAlto"
+                android:layout_height="@dimen/E_cartaAlto"
                 android:layout_weight="1"
                 android:background="@color/backText"
                 android:onClick="changeFragment"
@@ -132,7 +135,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/store" />
+                android:text="@string/store"
+                android:textSize="@dimen/H_parrafo" />
         </LinearLayout>
 
     </LinearLayout>

@@ -131,7 +131,7 @@
     <string name="button_text2">200</string>
     <string name="button_text3">300</string>
     <string name="pista">==================== Clues ====================</string>
-    <string name="avatares">==================== Avatars ====================</string>
+    <string name="avatares">======= Avatars =======</string>
     <string name="user">User</string>
     <string name="store">Store</string>
     <string name="puntos">Points:</string>

@@ -565,8 +565,8 @@ public class ActivityJuego extends AppCompatActivity {
                     Integer num = user.getNumMultiMatchs() + 1;
                     String otherUserName;
 
-                    Match meMatch = match;
-                    Match otherMatch = match;
+                    Match meMatch = partidaFinalizada(match);
+                    Match otherMatch = partidaFinalizada(match);
 
                     if (room.getWinner().equals(userName)) {
                         meMatch.setResultGame(true);
@@ -623,6 +623,16 @@ public class ActivityJuego extends AppCompatActivity {
         roomRef.setValue(room);
 
     }// FIN terminarPartidaMulti
+
+    public Match partidaFinalizada(Match matchRoom) {
+        Match matchUser = new Match();
+        matchUser.setName(matchRoom.getName());
+        matchUser.setBeginningDate(matchRoom.getBeginningDate());
+        matchUser.setEndingDate(matchRoom.getEndingDate());
+        matchUser.setIsSolo(matchRoom.getIsSolo());
+
+        return matchUser;
+    }
 
     //Método reinicia todas las imagenes
     public void reiniciarCartas() {
